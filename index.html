@@ -8,6 +8,39 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+
+<div class="modal" id="user-modal">
+	<div class="modal-content">
+		<span class="close">x</span>
+		<h2>Создать пользователя</h2>
+		<form action="#" method="post">
+			<label for="user-full-name">ФИО:</label>
+			<input type="text" id="user-full-name" name="user-full-name" required>
+
+			<label for="user-phone">Телефон:</label>
+			<input type="tel" id="user-phone" name="user-phone" required>
+
+			<label for="user-email">E-mail:</label>
+			<input type="email" id="user-email" name="user-email" required>
+
+			<label for="user-login">Логин:</label>
+			<input type="text" id="user-login" name="user-login" required>
+
+			<label for="user-password">Пароль:</label>
+			<input type="password" id="user-password" name="user-password" required>
+
+			<label for="user-group">Роль пользователя:</label>
+			<select id="user-group" name="user-group" required>
+				<option value="">Выберите роль</option>
+				<option value="admin">Администратор</option>
+				<option value="user">Пользователь</option>
+			</select>
+
+			<input type="submit" value="Создать" />
+		</form>	
+	</div>	
+</div>
+
 <div class="container">
     <div class="header">
         <ul class="menu">
@@ -15,6 +48,7 @@
             <li class="menu-item"><a href="#">Новости</a></li>
             <li class="menu-item"><a href="#">О нас</a></li>
             <li class="menu-item"><a href="#">Контакты</a></li>
+						<li class="menu-item"><a id="open-create-user">Создать пользователя</a></li>
         </ul>
     </div>
 		
